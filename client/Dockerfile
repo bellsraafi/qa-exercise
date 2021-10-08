@@ -1,9 +1,9 @@
-FROM node:6-slim
+FROM node:12-slim
 
 COPY . /usr/src
 
-WORKDIR /usr/src 
+WORKDIR /usr/src
 
-RUN npm install 
+RUN npm install
 
 CMD ["npm", "start"]

@@ -19,16 +19,16 @@ router.get('/', function(req, res, next) {
 
 router.get('/callback', function getSingleSignOnUser(req, res, next) {
   const query = req.query;
-  const uri = 'http://localhost:5000/authenticate/callback';  
+  const uri = 'http://localhost:5000/authenticate/callback';
   const code = query.code;
-  
+
   getSingleSignToken(code, uri, (err, resp, body) => {
     const rstr = JSON.parse(body);
-    
+
     getUserProfile(rstr.access_token, (err, resp, body) => {
       if (err) return next(err);
-      
-      const state = new Buffer(JSON.stringify(claimMapper(JSON.parse(body)))).toString('base64');
+
+      const state = Buffer.from(JSON.stringify(claimMapper(JSON.parse(body)))).toString('base64');
       res.redirect(`${req.query.state}?login=${state}`);
     });
   });
