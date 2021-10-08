@@ -10,7 +10,7 @@ const claimMapper = require('./claim-mapper.js');
 router.get('/', function(req, res, next) {
   res.redirect(`https://${config.domain}/authorize` + '?' + qs.stringify({
     'response_type': 'code',
-    'connection': 'facebook',
+    'connection': 'google-oauth2',
     'state': req.query.return_url,
     'client_id': config.clientId,
     'redirect_uri': 'http://localhost:5000/authenticate/callback'
