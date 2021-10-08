@@ -1,13 +1,13 @@
 # QA Technical Exercise
 
-#### Getting started
+### Getting started
 Fork this project.
 
 ---
 ## PART ONE
 For this part, this repository contains the source of an application to be tested. It's a simple client (web) and server application (api).
 
-There's something wrong, and it'll be up to you to report it, create a reproducible test case, and see how far you can get on your report.
+There's something wrong, and it'll be up to you to report it. Create a reproducible test case, and see how far you can get on your report.
 
 **Can you spot the issue?**
 
@@ -46,7 +46,7 @@ Using the configuration settings sent to you email, please update your `server/c
 ```
 
 #### Running the app
-Once you have checked out the app, and docker installed you just need to do:
+Once you have checked out the app and installed docker, you just need to run:
 
 ```bash
 $ docker-compose up
@@ -84,7 +84,7 @@ client_1  |
 Open your web browser and navigate to [http://localhost:3000](http://localhost:3000)
 
 ####  Running the Unit Test of the Server App
-The server app has a unit test into it, to run the unit test you can do the following
+The server app has a unit test set up. To run the unit test you can do the following
 
 ```bash
 $ > cd server
@@ -94,15 +94,15 @@ $ > docker run -v $PWD:/usr/src server npm test
 ```
 
 #### About the app
-The app is built using the `create-app` from React it's just a boiler plate.
+The app is built using the `create-app` from React, so it's just a boilerplate.
 
 And the server has been bootstraped with `express.js` on NodeJs.
 
 ---
 ## PART TWO
-In this part we are interested in your approach to the following problems.
+In this part, we are interested in your approach to the following problems.
 
-Please do the test in Selenium with a proper Object Oriented Programming language using automated testing best practices and using BDD gherkin language to define the acceptance tests. This is expected to take no more than 2 hour.
+Please do the test in Selenium with a proper Object Oriented Programming language, using automated testing best practices and BDD gherkin language to define the acceptance tests. This is expected to take no more than 2 hours.
 
 #### To start
 - Create a new directory name part_two and put all your files in it for this part.
@@ -110,7 +110,7 @@ Please do the test in Selenium with a proper Object Oriented Programming languag
 
 #### Exercise #1
 - Create Page Object Model framework for [https://rise.capital](https://rise.capital) to do the exercise 2 & 3
-- Driver manager pattern. We should be able to run the test framework against Chrome, Firefox and Microsoft Edge browsers
+- Use the `driver manager` pattern. We should be able to run the test framework against Chrome, Firefox and Microsoft Edge browsers
 
 #### Exercise #2
 Click on the "Products" Menu
@@ -123,7 +123,7 @@ Click on the "Products" Menu
 - b. Verify and print the wealth value for Tope when he retires at the age of 60.
 
 #### Exercise #4
-README file - Include instructions on how to set up and execute your tests on a clean install of Windows/MacOS inside the directory created earlier
+README file - Include instructions on how to set up and execute your tests on a clean install of Windows/MacOS/Linux inside the directory created earlier
 Bonus point: Test execution on Docker instances
 
 ----
