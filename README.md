@@ -38,9 +38,9 @@ Using the configuration settings sent to you email, please update your `server/c
 ```json
 {
   "auth": {
-      "domain": "auth0-domain",
-      "clientId": "auth0-client-id",
-      "clientSecret": "auth0-client-secret"
+    "domain": "auth0-domain",
+    "clientId": "auth0-client-id",
+    "clientSecret": "auth0-client-secret"
   }
 }
 ```
@@ -109,11 +109,11 @@ Please do the test in Selenium with a proper Object Oriented Programming languag
 - Commit each exercise once you've finished with it.
 
 #### Exercise #1
-- Create Page Object Model framework for https://rise.capital to do the exercise 2 & 3
+- Create Page Object Model framework for [https://rise.capital](https://rise.capital) to do the exercise 2 & 3
 - Driver manager pattern. We should be able to run the test framework against Chrome, Firefox and Microsoft Edge browsers
 
 #### Exercise #2
-Click on the Products
+Click on the "Products" Menu
 - Assert that the "Build Wealth" is included in the submenu list
 - Click on the "Build Wealth" submenu
 - Capture and Print all text in H1 tag on the page
