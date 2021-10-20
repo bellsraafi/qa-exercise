@@ -19,3 +19,4 @@ npm-debug.log
 *.iws
 log/
 target/
+test-output/
