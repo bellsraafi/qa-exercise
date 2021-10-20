@@ -27,7 +27,6 @@ router.get('/callback', function getSingleSignOnUser(req, res, next) {
 
     getUserProfile(rstr.access_token, (err, resp, body) => {
       if (err) return next(err);
-
       const state = Buffer.from(JSON.stringify(claimMapper(JSON.parse(body)))).toString('base64');
       res.redirect(`${req.query.state}?login=${state}`);
     });

@@ -3,18 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "chai": "^4.3.4",
+    "chromedriver": "^94.0.0",
+    "mocha": "^9.1.2",
     "react-scripts": "0.8.1"
   },
   "dependencies": {
     "buffer": "^5.0.2",
+    "chai-as-promised": "^7.1.1",
+    "config": "^3.3.6",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "react-router": "^3.0.0"
+    "react-router": "^3.0.0",
+    "selenium-webdriver": "^4.0.0-rc-2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test:e2e": "mocha --timeout 200000 e2e/auth.test.js",
     "eject": "react-scripts eject"
   }
 }

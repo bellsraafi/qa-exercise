@@ -27,7 +27,7 @@ public class DriverManager {
             default:
                 throw new IllegalStateException("Invalid browser name: "+ browser);
         }
-//        driver.manage().window().maximize();
+        driver.manage().window().maximize();
         return driver;
     }
 }

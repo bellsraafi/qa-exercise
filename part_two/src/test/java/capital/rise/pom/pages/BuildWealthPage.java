@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.List;
 
 public class BuildWealthPage extends BasePage {
 
@@ -70,7 +69,6 @@ public class BuildWealthPage extends BasePage {
     public BuildWealthPage clickBtnCalculate() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.elementToBeClickable(btnCalculateLocator)).click();
-//        driver.findElement(btnCalculateLocator).click();
         return this;
     }
 

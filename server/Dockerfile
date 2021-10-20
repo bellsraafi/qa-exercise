@@ -1,4 +1,4 @@
-FROM node:12-slim
+FROM node:16.8.0-slim 
 
 COPY . /usr/src
 
