@@ -1,0 +1,8 @@
+{
+  "username": "[name@rise.capital]",
+  "password": "[password]",
+  "firstname": "[FirstName]",
+  "lastname": "[LastName]",
+  "explicitWaitMS": 10000,
+  "baseURL": "http://localhost:3000"
+}
