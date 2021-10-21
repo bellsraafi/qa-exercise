@@ -2,7 +2,7 @@
 
 
 ## Steps to run: 
-1) Clone the project      
+1) Clone the project your system.     
 2) From the Terminal navigate to the directory qa-exercise/part_two where you can see *pom.xml*
 3) Run `mvn install -DskipTests`
 4) Run:
