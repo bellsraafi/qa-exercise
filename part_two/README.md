@@ -1,4 +1,4 @@
-# Rise Capital e2e Atumated test
+# Rise Capital e2e Automated test
 
 
 ## Steps to run: 
